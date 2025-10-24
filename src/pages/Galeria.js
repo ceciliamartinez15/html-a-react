@@ -8,49 +8,49 @@ function Galeria() {
   const galleryItems = [
     {
       category: 'instalaciones',
-      image: '/imagenes/casacristall.jpg',
+      image: process.env.PUBLIC_URL + '/imagenes/casacristall.jpg',
       title: 'Salón Principal',
       description: 'Nuestro espacio principal para talleres y reuniones'
     },
     {
       category: 'naturaleza',
-      image: '/imagenes/cristal.jpg',
+      image: process.env.PUBLIC_URL + '/imagenes/cristal.jpg',
       title: 'Jardín',
       description: 'Espacio verde para meditación y conexión'
     },
     {
       category: 'eventos',
-      image: '/imagenes/foto1.jpg',
+      image: process.env.PUBLIC_URL + '/imagenes/foto1.jpg',
       title: 'Jardín',
       description: 'Caminatas. Amanecer. Comienza el día con un desayuno frente a una vista espectacular.'
     },
     {
       category: 'instalaciones',
-      image: '/imagenes/casacristal.jpg',
+      image: process.env.PUBLIC_URL + '/imagenes/casacristal.jpg',
       title: 'Cocina Comunitaria',
       description: 'Preparamos alimentos orgánicos juntos'
     },
     {
       category: 'naturaleza',
-      image: '/imagenes/foto2.jpg',
+      image: process.env.PUBLIC_URL + '/imagenes/foto2.jpg',
       title: 'Amanecer',
       description: 'Vistas privilegiadas desde Casa Cristal'
     },
     {
       category: 'naturaleza',
-      image: '/imagenes/foto3.jpg',
+      image: process.env.PUBLIC_URL + '/imagenes/foto3.jpg',
       title: 'Naturaleza',
       description: ''
     },
     {
       category: 'naturaleza',
-      image: '/imagenes/foto4.jpg',
+      image: process.env.PUBLIC_URL + '/imagenes/foto4.jpg',
       title: 'Naturaleza',
       description: ''
     },
     {
       category: 'eventos',
-      image: '/imagenes/foto5.jpg',
+      image: process.env.PUBLIC_URL + '/imagenes/foto5.jpg',
       title: 'Ceremonia',
       description: 'Celebraciones especiales en fechas significativas'
     }
@@ -60,7 +60,7 @@ function Galeria() {
     <div className="galeria-page">
       <header>
         <div className="container">
-          <img src="/imagenes/logo.jpg.png" alt="Logo de Casa Cristal" />
+          <img src={process.env.PUBLIC_URL + '/imagenes/logo.jpg.png'} alt="Logo de Casa Cristal" />
           <h1>Casa Cristal</h1>
           <nav>
             <ul>
@@ -87,6 +87,7 @@ function Galeria() {
               >
                 Todo
               </button>
+              {/* Si quieres agregar más botones para filtrar por categoría, puedes hacerlo aquí */}
             </div>
             
             <div className="gallery-grid">

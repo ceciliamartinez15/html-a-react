@@ -60,7 +60,10 @@ function Contacto() {
       <header>
         <div className="container">
           <Link to="/" className="logo">
-            <img src="/imagenes/logo.jpg.png" alt="Logo de Casa Cristal" />
+            <img
+              src={process.env.PUBLIC_URL + '/imagenes/logo.jpg.png'}
+              alt="Logo de Casa Cristal"
+            />
           </Link>
           <h1>Casa Cristal</h1>
           <nav>

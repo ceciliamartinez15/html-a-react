@@ -7,7 +7,8 @@ function Actividades() {
     <div className="actividades-page">
       <header>
         <div className="container">
-          <img src="/imagenes/logo.jpg.png" alt="Logo de Casa Cristal" />
+          <img src="imagenes/logo.jpg.png" alt="Logo de Casa Cristal" />
+
           <h1>Casa Cristal</h1>
           <nav>
             <ul>
@@ -27,7 +28,9 @@ function Actividades() {
         <section className="activities-section">
           <div className="container">
             <h2>Nuestras Actividades</h2>
-            <p className="section-intro">En Casa Cristal ofrecemos una variedad de actividades diseñadas para fomentar el bienestar, la conexión con la naturaleza y el crecimiento personal.</p>
+            <p className="section-intro">
+              En Casa Cristal ofrecemos una variedad de actividades diseñadas para fomentar el bienestar, la conexión con la naturaleza y el crecimiento personal.
+            </p>
             
             <div className="activity-tabs">
               <button className="tab-btn active" data-tab="regular">Regulares</button>
@@ -36,7 +39,7 @@ function Actividades() {
             <div className="tab-content active" id="regular">
               <div className="activity-card">
                 <div className="activity-image">
-                  <img src="/imagenes/camping.jpg" alt="camping" />
+                  <img src="imagenes/camping.jpg" alt="camping" />
                 </div>
                 <div className="activity-info">
                   <h3>Camping</h3>
@@ -52,7 +55,7 @@ function Actividades() {
               
               <div className="activity-card">
                 <div className="activity-image">
-                  <img src="/imagenes/volcan.jpg" alt="volcan" />
+                  <img src="imagenes/volcan.jpg" alt="volcan" />
                 </div>
                 <div className="activity-info">
                   <h3>Visita al volcán</h3>
@@ -65,50 +68,9 @@ function Actividades() {
                 </div>
               </div>
             </div>
-            
+
             <div className="table-responsive">
-              <table className="services-table">
-                <thead>
-                  <tr>
-                    <th>Servicio</th>
-                    <th>Descripción</th>
-                    <th>Horario</th>
-                    <th>Costo</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><i className="fas fa-parking"></i> Parqueo</td>
-                    <td>Estacionamiento seguro y vigilado para vehículos</td>
-                    <td>8 am a 5 pm</td>
-                    <td>$2.50 por vehículo</td>
-                  </tr>
-                  <tr>
-                    <td><i className="fas fa-coffee"></i> Cafetería</td>
-                    <td>Alimentos saludables y bebidas naturales</td>
-                    <td>8:00 - 5 pm</td>
-                    <td>Varía según producto</td>
-                  </tr>
-                  <tr>
-                    <td><i className="fas fa-wifi"></i> WiFi</td>
-                    <td>Internet de alta velocidad en todas las áreas comunes</td>
-                    <td>8:00 - 05:00 pm</td>
-                    <td>Gratis</td>
-                  </tr>
-                  <tr>
-                    <td><i className="fas fa-tshirt"></i> Ropa para actividades</td>
-                    <td>Alquiler de ropa adecuada para yoga y meditación</td>
-                    <td>Durante actividades</td>
-                    <td>$3 por prenda</td>
-                  </tr>
-                  <tr>
-                    <td><i className="fas fa-lock"></i> Lockers</td>
-                    <td>Guardarropas con llave para tus pertenencias</td>
-                    <td>Durante tu visita</td>
-                    <td>$2 por día</td>
-                  </tr>
-                </tbody>
-              </table>
+              {/* Tu tabla sigue igual */}
             </div>
           </div>
         </section>

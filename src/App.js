@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/html-a-react">
       <div className="App">
         <Routes>
           <Route path="/" element={<Inicio />} />

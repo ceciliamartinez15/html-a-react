@@ -18,7 +18,9 @@ function Videos() {
     <div className="videos-page">
       <header>
         <div className="container">
-          <img src="/imagenes/logo.jpg.png" alt="Logo de Casa Cristal" />
+          {/* ✅ Ruta relativa */}
+          <img src="imagenes/logo.jpg.png" alt="Logo de Casa Cristal" />
+
           <h1>Casa Cristal</h1>
           <nav>
             <ul>

@@ -9,7 +9,9 @@ function Recomendaciones() {
     <div className="recomendaciones-page">
       <header>
         <div className="container">
-          <img src="/imagenes/logo.jpg.png" alt="Logo de Casa Cristal" />
+          {/* ✅ Ruta relativa, sin process.env.PUBLIC_URL */}
+          <img src="imagenes/logo.jpg.png" alt="Logo de Casa Cristal" />
+
           <h1>Casa Cristal</h1>
           <nav>
             <ul>
@@ -29,12 +31,16 @@ function Recomendaciones() {
         <section className="recommendations-section">
           <div className="container">
             <h2>Recomendaciones para tu Aventura</h2>
-            <p className="section-intro">En Casa Cristal queremos que tu experiencia en la naturaleza sea segura y memorable. Aquí tienes nuestros mejores consejos.</p>
-            
+            <p className="section-intro">
+              En Casa Cristal queremos que tu experiencia en la naturaleza sea segura y memorable. 
+              Aquí tienes nuestros mejores consejos.
+            </p>
+
             <div className={`tab-content ${activeTab === 'volcan' ? 'active' : ''}`} id="volcan">
               <div className="recommendation-card">
                 <div className="recommendation-image">
-                  <img src="/imagenes/volcansanta.jpg" alt="Recomendaciones para el volcán" />
+                  {/* ✅ Ruta relativa */}
+                  <img src="imagenes/volcansanta.jpg" alt="Recomendaciones para el volcán" />
                 </div>
                 <div className="recommendation-info">
                   <h3>Preparación para la Ascensión</h3>
@@ -86,7 +92,10 @@ function Recomendaciones() {
                   
                   <div className="weather-alert">
                     <i className="fas fa-exclamation-triangle"></i>
-                    <p>El clima en el volcán puede cambiar bruscamente. Lleva protección para lluvia y abrigo extra incluso en días soleados.</p>
+                    <p>
+                      El clima en el volcán puede cambiar bruscamente. Lleva protección para lluvia 
+                      y abrigo extra incluso en días soleados.
+                    </p>
                   </div>
                 </div>
               </div>
