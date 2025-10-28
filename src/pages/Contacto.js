@@ -13,7 +13,6 @@ function Contacto() {
     message: '',
   });
 
-  // 🧠 Recuperar datos guardados del localStorage al cargar
   useEffect(() => {
     const savedData = localStorage.getItem('contactForm');
     if (savedData) {
@@ -21,7 +20,6 @@ function Contacto() {
     }
   }, []);
 
-  // 💾 Guardar automáticamente cada cambio
   useEffect(() => {
     localStorage.setItem('contactForm', JSON.stringify(formData));
   }, [formData]);
@@ -55,8 +53,6 @@ function Contacto() {
       .then((data) => {
         console.log('Respuesta recibida:', data);
         setMensajeEnviado(true);
-
-        // 🧹 Limpiar formulario y localStorage
         setFormData({
           name: '',
           email: '',
