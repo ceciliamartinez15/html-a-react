@@ -22,18 +22,19 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
 
-        {/* 👇 Footer con licencia Creative Commons */}
+        {}
         <footer
           style={{
             textAlign: "center",
             fontSize: "0.9rem",
             marginTop: "2rem",
             padding: "1rem 0",
-            backgroundColor: "#f5f5f5"
+            backgroundColor: "var(--dark-color)",
+            color: "white"
           }}
         >
           <p>
-            © {new Date().getFullYear()} — Este sitio web está bajo una{" "}
+            © {new Date().getFullYear()} — Casa Cristal. Todos los derechos reservados. Este sitio web está bajo una{" "}
             <a
               href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
               target="_blank"

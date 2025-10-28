@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "Camping",
+    "horario": "Lunes a domingo",
+    "descripcion": "Cabañas disponibles para acampar.",
+    "ubicacion": "Jardín Principal",
+    "precio": "$35.00 por cabaña",
+    "imagen": "imagenes/camping.jpg"
+  },
+  {
+    "nombre": "Visita al volcán",
+    "horario": "Lunes a domingo",
+    "descripcion": "Visitas guiadas al volcán.",
+    "ubicacion": "Zona de excursiones",
+    "precio": "$2.00 por persona",
+    "imagen": "imagenes/volcan.jpg"
+  }
+]

@@ -50,7 +50,7 @@ function Acerca() {
         </section>
 
         <section className="mission-vision">
-          <div className="container">
+          <div className="mission-vision-container">
             <div className="mission">
               <h3><i className="fas fa-bullseye"></i> Misión</h3>
               <p>
@@ -107,17 +107,6 @@ function Acerca() {
           </div>
         </section>
       </main>
-
-      <footer>
-        <div className="container">
-          <p>&copy; 2025 Casa Cristal. Todos los derechos reservados.</p>
-          <div className="social-links">
-            <Link to="#"><i className="fab fa-facebook"></i></Link>
-            <Link to="#"><i className="fab fa-instagram"></i></Link>
-            <Link to="#"><i className="fab fa-youtube"></i></Link>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
